@@ -1,9 +1,12 @@
-import { storiesOf } from '@storybook/html';
+import { storiesOf, addDecorator } from '@storybook/html';
 import buildAndRegisterCustomElement from './utils/build-custom-element';
 import Avatar from 'c/avatar';
+import { withA11y } from '@storybook/addon-a11y';
+
 
 buildAndRegisterCustomElement('c-avatar', Avatar);
 
+addDecorator(withA11y)
 storiesOf('Avatar', module)
     .add('with initials', () => `
         <div class="slds-p-around_medium slds-m-around_x-small slds-box slds-theme_default">
