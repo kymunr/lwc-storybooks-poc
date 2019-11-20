@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/html';
-import buildAndRegisterCustomElement from './utils/build-custom-element';
+import buildAndRegisterCustomElement from '../utils/build-custom-element';
 import Button from 'c/button';
 
 buildAndRegisterCustomElement('c-button', Button);
