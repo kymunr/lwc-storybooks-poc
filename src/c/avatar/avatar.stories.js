@@ -1,5 +1,5 @@
 import { storiesOf, addDecorator } from '@storybook/html';
-import buildAndRegisterCustomElement from './utils/build-custom-element';
+import buildAndRegisterCustomElement from '../utils/build-custom-element';
 import Avatar from 'c/avatar';
 import { withA11y } from '@storybook/addon-a11y';
 
